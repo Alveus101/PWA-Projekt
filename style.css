@@ -1,0 +1,518 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+#logo img{
+    width: 120px;
+    margin-left: 20px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #003a5a;
+}
+
+#navigation {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #064b71;
+}
+
+#navigation ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin-left: 30px;
+    padding: 0;
+
+}
+
+#navigation li{
+    float: left;
+    padding: 10px 0px 10px 0px;
+    margin-right: 10px;
+    border: 2px solid transparent;
+}
+
+#navigation ul a{
+    color: white;
+    text-decoration: none;
+}
+
+#navigation li:hover{
+    border-bottom: 2px solid orange;
+}
+
+.section-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.category{
+    padding-bottom: 20px;
+}
+
+.category-box{
+    padding: 10px 10px 10px 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+    text-align: center;
+}
+
+.category-box img{
+    max-width: 400px;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.category-box h3{
+    padding: 15px 0px 15px 0px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.category-box p {
+    min-height: 50px;
+    text-align: left;
+}
+
+.category-date{
+    font-size: 12px;
+    color: gray;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.open-article{
+    text-decoration: none;
+    color: black;
+}
+
+.category-box:hover {
+    border: 1px solid rgba(128, 128, 128, 0.349);
+}
+
+.footer{
+    background-color: #003a5a;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+
+#footer-logo{
+    max-width: 125px;
+}
+
+#footer-logo img{
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+#logged-user{
+    width: 100%;
+    margin-left: 30px;
+    padding: 0px 5px 0px 5px;
+}
+
+#greeting{
+    width: 100%;
+    color: white;
+    padding-bottom: 5px;
+}
+
+#logout-button{
+    width: 100%;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+    padding: 2px 5px 2px 5px;
+    text-decoration: none;
+    border: 1px solid #064b71;
+}
+
+#logout-button:hover {
+    background-color: #064b71;
+    border: 1px solid white;
+}
+
+/* unos.html */
+
+#input form{
+    width: 45%;
+    margin: 0 auto;
+    padding: 30px 0px 30px 0px;
+    font-weight: bold;
+}
+
+#input form label,
+#input form input{
+    display: block;
+    width: 100%;
+}
+
+#input form input{
+    margin-bottom: 30px;
+}
+
+#archive {
+    max-width: 20px;
+}
+
+#input form button {
+    color: white;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+    margin-right: 5px;
+}
+
+#f-unos {
+    position: absolute;
+    bottom: 0;
+}
+
+.no-categories {
+    color: red;
+}
+
+#clear-form{
+    background-color: #064b71;
+    border: 1px solid #064b71;
+}
+
+.error {
+    color: red;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* skripta.php */
+
+#new-preview{
+    width: 45%;
+    margin: 0 auto;
+}
+
+/* clanak.php */
+
+.ar-category{
+    color:#003a5a;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+}
+
+.ar-title{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.ar-date{
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.ar-picture{
+    max-height: 500px;
+    text-align: center;
+}
+
+.ar-picture img{
+    object-fit: contain;
+    max-height: 100%;
+}
+
+.ar-short_content p{
+    padding: 40px 100px 0px 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ar-content p{
+    padding: 20px 100px 20px 100px;
+
+}
+
+/* administracija.php */
+
+#add-new-button{
+    margin-bottom: 20px;
+}
+
+.large-button {
+    background-color: #003a5a;
+    border: 1px solid #003a5a;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+}
+
+.large-button:hover {
+    background-color: #064b71;
+}
+
+#edit-selection {
+    width: 30%;
+    border: 1px solid #003a5a;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+
+}
+
+#choose-news {
+    margin-left: 10px;
+}
+
+#choose-submit {
+    margin-left: 10px;
+}
+
+#choose-news-form{
+    margin-bottom: 20px;
+}
+
+#delete-news{
+    background-color: darkred;
+    border: 1px solid darkred;
+}
+
+#save-news{
+    background-color: #064b71;
+    border: 1px solid #064b71;
+}
+
+.deleted-message {
+    color: red;
+}
+
+.editing-image{
+    max-width: 100%;
+}
+
+input {
+    border: 1px solid #003a5a;
+    border-radius: 7px;
+}
+
+textarea {
+    border: 1px solid #003a5a;
+    border-radius: 7px;
+    width: 100%;
+}
+
+#content {
+    height: 400px;
+}
+
+#image-upload{
+    border: none;
+    margin-top: 5px;
+}
+
+::-webkit-file-upload-button{
+    color: white;
+    background-color: #003a5a;
+    border: 1px solid #003a5a;
+    border-radius: 7px;
+}
+
+::-webkit-file-upload-button:hover{
+    background-color: #064b71;
+}
+
+/* login.php */
+
+#login_form {
+    max-width: 35%;
+    margin: 0 auto;
+    padding: 30px 10px 30px 10px;
+    border: 2px solid #003a5a;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(230, 230, 230);
+}
+
+#login_form label,
+#login_form input{
+    display: block;
+    width: 100%;
+}
+
+#login_form input{
+    margin-bottom: 15px;
+    border: 2px solid #003a5a;
+    border-radius: 7px;
+}
+
+#login_button {
+    color: white;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+    background-color: #003a5a;
+    font-weight: bold;
+    margin: 0 auto;
+    display: flex;
+    float: center;
+}
+
+#login_button:hover {
+    background-color: #064b71;
+}
+
+#register{
+    padding-top: 30px;
+}
+
+#register_button{
+    max-width: 110px;
+    font-weight: bold;
+    margin: 0 auto;
+    display: flex;
+    float: center;
+}
+
+#message {
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+}
+
+/* registracija.php */
+
+#register_form {
+    max-width: 35%;
+    margin: 0 auto;
+}
+
+#register_form label{
+    font-weight: bold;
+}
+
+#register_form input{
+    margin-bottom: 15px;
+}
+
+#register_form label,
+#register_form input{
+    display: block;
+    width: 100%;
+}
+
+.register-message{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* logout.php */
+
+.logout-message{
+    margin-bottom: 20px;
+}
+
+/* Scrollbar */
+
+@media screen and (min-width:800px) {
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #888;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #064b71;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #003a5a;
+    }
+}
+
+@media (max-width: 799px) {
+
+    .category-box img{
+        max-width: 370px;
+        max-height: 300px;
+        object-fit: contain;
+    }
+    
+    .category-box{
+        padding: 10px 0px 10px 0px;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+        text-align: center;
+    }
+
+    #logged-user{
+        max-width: 100%;
+        margin-left: 30px;
+        padding: 0px 5px 0px 5px;
+    }
+    
+    #greeting{
+        max-width: 100%;
+        color: white;
+        padding-bottom: 5px;
+    }
+
+    #login_form {
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 30px 10px 30px 10px;
+        border: 2px solid #003a5a;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: rgb(230, 230, 230);
+    }
+
+    #register_form {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    
+    #input form{
+        width: 75%;
+        margin: 0 auto;
+        padding: 30px 0px 30px 0px;
+        font-weight: bold;
+    }
+
+    #edit-selection {
+        width: 70%;
+        border: 1px solid #003a5a;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        font-weight: bold;
+    
+    }
+
+    .ar-picture{
+        max-height: 200px;
+        text-align: center;
+    }
+
+    .ar-short_content p{
+        padding: 40px 10px 0px 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .ar-content p{
+        padding: 20px 10px 20px 10px;
+    
+    }
+}
